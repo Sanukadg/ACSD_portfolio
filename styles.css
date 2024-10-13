@@ -160,7 +160,33 @@ footer p:nth-child(2){
   color: #00DBBA;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;
+}
 
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.info-name-container{
+  margin-right: 15px;
+}
+
+.info h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 600;  
+  margin-bottom: 35px;
+}
+
+.info p{
+  margin: 1px;                  /* Adds some spacing between the text lines */
+  font-size: 25px;                
+  color: white;
+  font-weight: 400;
+}
 
 
 
