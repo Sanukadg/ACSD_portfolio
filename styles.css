@@ -1,0 +1,220 @@
+body{
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 25, 46));
+  position: relative;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0;
+  font-family: "Inter", sans-serif;      /* Set site wide font as Inter */
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header{
+  color: white;     /* Set navigation bar font colour as white*/
+  display: flex;      
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);     /* Add a shadow for the nav bar */
+}
+
+.navbar{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav a{
+  text-decoration: none;
+  margin-right: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar nav a:hover{
+  border-bottom: 2px solid white;
+}
+
+.logo > p{
+  margin: 0;
+  margin-left: 25px;
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait > img{
+  max-width: 350px;                /* Ensures image scales properly */
+  height: auto;                   /* Maintains aspect ratio */
+  margin-right: 20px;             /* Space between the image and text */
+}
+
+.quick-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-info p{
+  margin: 1px;                  /* Adds some spacing between the text lines */
+  font-size: 40px;                /* Adjust font size for better readability */
+  color: white;
+  font-weight: 400;
+}
+
+.quick-info a{
+  text-decoration: none;
+}
+
+.medium-inter{
+  font-weight: 500;
+}
+
+.semibold-inter{
+  font-weight: 600;
+  color: #00DBBA;
+}
+
+.quick-info p:nth-child(3){
+  font-size: 20px;
+}
+
+.button{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: black;
+  border: 2px white;
+  border-style: solid;
+  border-radius: 23px;
+  padding: 10px 20px 10px 20px;
+  transition: 0.25s;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.socials{
+  margin-top: 15px;
+}
+
+.socials img{
+  max-width: 35px;
+  height: auto;
+  margin-right: 10px;
+  transition: 0.25s;
+}
+
+.socials img:hover{
+  transform: translateY(-3px);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.links p:nth-child(1){
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+footer p:nth-child(2){
+  color: #6d6d6d;
+  font-weight: 600;
+}
+
+.links a{
+  color: black;
+  text-decoration: none;
+}
+
+.links ul{
+  list-style-type: none;
+}
+
+.links li{
+  margin-top: 10px;
+}
+
+.links a:hover{
+  color: #00DBBA;
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header{
+    flex-direction: column;     /* Stack the logo and navbar vertically */
+    align-items: center;    /* Align items to the start */
+  }
+
+  .navbar{
+    width: 100%;                /* Make the navbar take full width */
+    justify-content: center;    /* Center the navigation */
+  }
+
+  .navbar nav{
+    display: flex;
+    flex-direction: column;     /* Stack the nav links vertically */
+    align-items: center;
+    width: 100%;                /* Ensure full-width for centering */
+  }
+
+  .navbar nav a{
+    margin: 10px 0;             /* Add vertical spacing between links */
+  }
+
+  .logo p{              /* Slightly bigger font size on smaller screen */
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .main {
+    flex-direction: column;        /* Stack image and text vertically */
+    text-align: center;            /* Center text */
+  }
+
+  .portrait img{
+    margin-right: 0;               /* Remove right margin on small screens */
+    margin-bottom: 20px;           /* Add space below the image */
+    max-width: 200px;              /* Reduce image size for smaller screens */
+  }
+
+}
+
+@media (max-width: 480px) {
+  .logo p{
+    margin: 0;
+    font-size: 30px;            /* Slightly bigger font size on very small screens */
+  }
+
+  .navbar nav a{
+    font-size: 18px;            /* Adjust link size for smaller screens */
+  }
+
+}
