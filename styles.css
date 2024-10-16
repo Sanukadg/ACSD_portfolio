@@ -16,6 +16,13 @@ header{
   align-items: center;
   padding: 10px;
   box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);     /* Add a shadow for the nav bar */
+  border-radius: 25px;
+}
+
+h1{
+  font-size: 110px;
+  color: white;
+  font-weight: 600;
 }
 
 .navbar{
@@ -106,6 +113,7 @@ nav a{
   background-color: white;
   color: black;
   cursor: pointer;
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
 }
 
 .socials{
@@ -188,11 +196,80 @@ footer p:nth-child(2){
   font-weight: 400;
 }
 
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.blog-s-container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 250px;
+}
+
+.blog-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  background-color: white;
+  border-radius: 5px;
+  width: 300px;
+  transition: 0.25s;
+}
+
+.blog-card:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+.blog-title{
+  font-weight: 600;
+}
+
+.blog-content img{
+  width: 300px;
+}
+
+.blog-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#blog1,#blog2{
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+
 
 
 
 
 /* Responsive Design */
+
+@media (max-width: 1000px){
+  .blog-s-container{
+    flex-direction: column;
+  }
+
+  .blog-card{
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   header{
     flex-direction: column;     /* Stack the logo and navbar vertically */
@@ -229,6 +306,14 @@ footer p:nth-child(2){
     margin-right: 0;               /* Remove right margin on small screens */
     margin-bottom: 20px;           /* Add space below the image */
     max-width: 200px;              /* Reduce image size for smaller screens */
+  }
+
+  .blog-s-container{
+    flex-direction: column;
+  }
+
+  .blog-card{
+    margin-bottom: 25px;
   }
 
 }
