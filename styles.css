@@ -19,7 +19,12 @@ header{
   border-radius: 25px;
 }
 
-h1{
+hr{
+  margin: 0;
+  width: 100%;
+}
+
+.main-container h1{
   font-size: 110px;
   color: white;
   font-weight: 600;
@@ -52,6 +57,8 @@ nav a{
 }
 
 .main{
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Apply the fadeIn animation */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -246,7 +253,13 @@ footer p:nth-child(2){
   border-radius: 10px;
 }
 
-#blog1,#blog2, #blog3{
+.blog-datetime{
+  color:#6d6d6d;
+  font-style: italic;
+  font-size: smaller;
+}
+
+#blog1,#blog2{
   padding: 25px;
   border-radius: 10px;
   background-color: white;
@@ -254,8 +267,97 @@ footer p:nth-child(2){
 }
 
 
+.hero-title{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-title h1{
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px; /* Prevents the form from becoming too wide */
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);
+  transition: 0.25s;
+}
+
+.form-container:hover{
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
+}
+
+.form-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.form-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  width: 150px;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:not([type="submit"]):not([type="reset"]) {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.input-buttons{
+  font-size: 15px;
+  background-color: white;
+  border: 2px solid black ;
+  border-radius: 25px;
+  padding: 10px 20px 10px 20px;
+  transition: 0.25s;
+}
+
+.input-buttons:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
 
 
+
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* End fully opaque */
+  }
+}
 
 
 /* Responsive Design */

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Newsletter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <p>Hi</p>
+    </div>
+    <div class="navbar">
+      <nav>
+        <a href=index.html>Home</a>
+        <a href=about.html>About</a>
+        <a href=blog.html>Blog</a>
+        <a href=newsletter.html>Newsletter</a>
+      </nav> 
+    </div>
+  </header>
+
+  <main>
+    <div class="main">
+
+      <section class="hero-title">
+        <h1>Subscribe to my Newsletter</h1>
+        <p>Fill in your details and get a free newsletter weekly or monthly!</p>
+      </section>
+
+      <section class="form">
+        <div class="form-container">
+
+          <h3>Registration Form</h3>
+          <hr>
+          <form>
+            <div class="form-body">
+
+              <div class="form-inputs">
+                <input type="text" id="input-fname" name="firstname" placeholder="First Name">
+                <input type="text" id="input-lname" name="lastname" placeholder="Last Name">
+                <input type="email" id="input-email" name="email" required placeholder="Email">
+              </div>
+
+              <h5>Which newsletter do you want to subscribe to?</h5>
+              <div>
+                <label for="input-weekly">Weekly</label>
+                <input type="radio" id="input-weekly" value="weekly" name="category" required>
+                <label for="input-monthly">Monthly</label>
+                <input type="radio" id="input-monthly" value="weekly" name="category">
+              </div>
+
+              <div>
+                <input type="submit" class="input-buttons">
+                <input type="reset" class="input-buttons">
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </section>
+      
+    </div>
+
+    <div class="main">
+
+      <section class="form">
+
+        <div class="form-container">
+
+          <h3>Send your message</h3>
+          <hr>
+          <form>
+            <div class="form-body">
+
+              <div class="form-inputs">
+                <input type="text" id="input-fname" name="firstname" placeholder="First Name">
+                <input type="text" id="input-lname" name="lastname" placeholder="Last Name">
+                <input type="email" id="input-email" name="email" placeholder="Email" required>
+                <textarea name="input-msg" rows="4" cols="50" placeholder="Enter your message" required></textarea>
+              </div>
+
+              <div>
+                <input type="submit" class="input-buttons">
+                <input type="reset" class="input-buttons">
+              </div>
+
+            </div>
+          </form>
+
+      </section>
+
+      <section class="hero-title">
+        <h1>Send me a message!</h1>
+        <div>
+          <p>Contact Number +94 71 700 9946</p>
+          <p>Email sanukagamage@gmail.com</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <section class="links">
+      <p>Links</p>
+      <ul>
+        <li><a href=index.html>Home</a></li>
+        <li><a href=about.html>About</a></li>
+        <li><a href=blog.html>Blog</a></li>
+        <li><a href=newsletter.html>Newsletter</a></li>
+      </ul>
+    </section>
+    <p>Copyright ©2024 All rights reserved</p>
+  </footer>
+
+</body>
+</html>
