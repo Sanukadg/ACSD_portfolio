@@ -415,11 +415,11 @@ input:not([type="submit"]):not([type="reset"]) {
     max-width: 200px;              /* Reduce image size for smaller screens */
   }
 
-  .blog-s-container{
+  .blog-shortcuts{
     flex-direction: column;
   }
 
-  .blog-card{
+  .blog-s-button{
     margin-bottom: 25px;
   }
 
