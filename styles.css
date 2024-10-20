@@ -237,7 +237,7 @@ footer p:nth-child(2){
 }
 
 .blog-s-button img{
-  width: 300px;
+  max-width: 300px;
 }
 
 .blog-s-button:hover{
@@ -247,6 +247,7 @@ footer p:nth-child(2){
 }
 
 .blog-title{
+  text-align: center;
   font-weight: 600;
 }
 
@@ -429,6 +430,10 @@ input:not([type="submit"]):not([type="reset"]) {
     margin-bottom: 25px;
   }
 
+  #blog1,#blog2,#blog1 img,#blog2 img{
+    max-width: 550px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -439,6 +444,10 @@ input:not([type="submit"]):not([type="reset"]) {
 
   .navbar nav a{
     font-size: 18px;            /* Adjust link size for smaller screens */
+  }
+
+  #blog1,#blog2,#blog1 img,#blog2 img{
+    max-width: 350px;
   }
 
 }
