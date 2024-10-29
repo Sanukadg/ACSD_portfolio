@@ -251,6 +251,12 @@ footer p:nth-child(2){
   font-weight: 600;
 }
 
+#blog1::before, #blog2::before {
+  content: "📝"; /* Example of a pencil icon */
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
 .blog-container{
   display: flex;
   justify-content: center;
@@ -348,7 +354,11 @@ input:not([type="submit"]):not([type="reset"]) {
   border-style: solid;
 }
 
-.input-buttons{
+input[type="text"] {
+  border: 2px solid blue;
+}
+
+input[type="submit"], input[type="reset"]{
   font-size: 15px;
   background-color: white;
   border: 2px solid black ;
@@ -357,7 +367,7 @@ input:not([type="submit"]):not([type="reset"]) {
   transition: 0.25s;
 }
 
-.input-buttons:hover{
+input[type="submit"]:hover, input[type="reset"]:hover{
   cursor: pointer;
   background-color: black;
   color: white;
