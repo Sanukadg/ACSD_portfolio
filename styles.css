@@ -1,463 +1,473 @@
-*{
-  font-family: "Inter", sans-serif;      /* Set site wide font as Inter */
-  scroll-behavior: smooth;
+/* Global Styles */
+* {
+  font-family: "Inter", sans-serif;      /* Set site-wide font as Inter */
+  scroll-behavior: smooth;               /* Smooth scrolling for anchor links */
 }
 
-body{
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 25, 46));
-  position: relative;
-  height: 100vh;
-  overflow: scroll;
-  margin: 0;
-  font-optical-sizing: auto;
-  font-style: normal;
+/* Body Styles */
+body {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(2, 25, 46));  /* Gradient for the background */
+  position: relative;                     /* Allows absolute positioning of child elements */
+  height: 100vh;                         /* Full viewport height */
+  overflow: scroll;                      /* Enable scrolling */
+  margin: 0;                             /* Remove default margin */
+  font-optical-sizing: auto;             
+  font-style: normal;                     
 }
 
-header{
-  color: white;     /* Set navigation bar font colour as white*/
-  display: flex;      
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);     /* Add a shadow for the nav bar */
-  border-radius: 25px;
+/* Header Styles */
+header {
+  color: white;                          /* Set navigation bar font color as white */
+  display: flex;                         /* Use flexbox for layout */
+  justify-content: space-between;        
+  align-items: center;                   /* Center items vertically */
+  padding: 10px;                         
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);  /* Add shadow */
+  border-radius: 25px;                   /* Rounded corners for the navbar */
 }
 
-hr{
-  margin: 0;
-  width: 100%;
+hr {
+  margin: 0;                            
+  width: 100%;                          
 }
 
-.main-container h1{
-  font-size: 110px;
-  color: white;
-  font-weight: 600;
+/* Main Container Styles */
+.main-container h1 {
+  font-size: 110px;                     
+  color: white;                         /* White text color */
+  font-weight: 600;                     /* Semi-bold font weight */
 }
 
-.navbar{
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
+/* Navigation Bar Styles */
+.navbar {
+  flex-grow: 1;                         /* Allow navbar to grow and fill space */
+  display: flex;                        
+  justify-content: center;              
 }
 
-nav a{
-  text-decoration: none;
-  margin-right: 50px;
-  color: white;
-  font-weight: 600;
+nav a {
+  text-decoration: none;                 /* Remove underline from links */
+  margin-right: 50px;                   
+  color: white;                         /* White text color */
+  font-weight: 600;                     /* Semi-bold font weight */
 }
 
-.navbar nav a:hover{
-  border-bottom: 2px solid white;
+.navbar nav a:hover {
+  border-bottom: 2px solid white;      /* Underline effect on hover */
 }
 
-.logo > p{
-  margin: 0;
-  margin-left: 25px;
-  font-family: "Knewave", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
+/* Logo Styles */
+.logo > p {                            /* Selects child paragraphs relationally inside the logo */
+  margin: 0;                          
+  margin-left: 25px;                  
+  font-family: "Knewave", system-ui;  /* Custom font for the logo */
+  font-weight: 400;                    /* Normal font weight */
+  font-size: 25px;                     
 }
 
-.main{
-  opacity: 0;
-  animation: fadeIn 1s forwards; /* Apply the fadeIn animation */
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Main Content Styles */
+.main {
+  opacity: 0;                          /* Initially hidden for animation */
+  animation: fadeIn 1s forwards;      /* Fade-in animation for the main section */
+  min-height: 100vh;                  /* Minimum height of the main section */
+  display: flex;                       
+  align-items: center;                 /* Center items vertically */
+  justify-content: center;             /* Center items horizontally */
 }
 
-.portrait > img{
-  max-width: 350px;                /* Ensures image scales properly */
-  height: auto;                   /* Maintains aspect ratio */
-  margin-right: 20px;             /* Space between the image and text */
+/* Image Styles */
+.portrait > img {                       /* Selects the child images relationally inside portrait class */
+  max-width: 350px;                    /* Ensure image scales properly */
+  height: auto;                        /* Maintain aspect ratio */
+  margin-right: 20px;                  /* Space between the image and text */
 }
 
-.quick-info{
-  display: flex;
-  flex-direction: column;
+/* Quick Info Styles */
+.quick-info {
+  display: flex;                       
+  flex-direction: column;              /* Stack children vertically */
 }
 
-.quick-info p{
-  margin: 1px;                  /* Adds some spacing between the text lines */
-  font-size: 40px;                /* Adjust font size for better readability */
-  color: white;
-  font-weight: 400;
+.quick-info p {
+  margin: 1px;                        /* Space between lines */
+  font-size: 50px;                   
+  color: white;                       /* White text color */
+  font-weight: 400;                   
 }
 
-.quick-info a{
-  text-decoration: none;
+.quick-info a {
+  text-decoration: none;               /* Remove underline from links */
 }
 
-.medium-inter{
-  font-weight: 500;
+.medium-inter {
+  font-weight: 500;                   /* Medium font weight */
 }
 
-.semibold-inter{
-  font-weight: 600;
-  color: #00DBBA;
+.semibold-inter {
+  font-weight: 600;                   /* Semi-bold font weight */
+  color: #00DBBA;                     /* Accent color */
 }
 
-.quick-info p:nth-child(3){
-  font-size: 20px;
+.quick-info p:nth-child(3) {         /* Selects the third child paragraph element */
+  font-size: 20px;                   
 }
 
-.button{
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 15px;
-  color: white;
-  font-weight: 500;
-  font-size: 15px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px white;
-  border-style: solid;
-  border-radius: 23px;
-  padding: 10px 20px 10px 20px;
-  transition: 0.25s;
+/* Button Styles */
+.button {
+  display: inline-block;               
+  text-align: center;                  /* Center text inside button */
+  text-decoration: none;               /* Remove underline */
+  margin-top: 15px;                   
+  color: white;                       /* White text color */
+  font-weight: 500;                   /* Medium font weight */
+  font-size: 15px;                    
+  background-color: rgba(0, 0, 0, 0); /* Transparent background color */
+  border: 2px white;                  /* White border */
+  border-style: solid;                 /* Solid border style */
+  border-radius: 23px;                /* Rounded corners */
+  padding: 10px 20px;                 
+  transition: 0.25s;                   /* Smooth transition for hover effects */
 }
 
-.button:hover{
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
+.button:hover {
+  background-color: white;            /* Change background on hover */
+  color: black;                       /* Change text color on hover */
+  cursor: pointer;                    /* Change cursor to pointer on hover */
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5); /* Add shadow on hover with 50% transparency */
 }
 
-.socials{
-  margin-top: 15px;
+/* Social Media Styles */
+.socials {
+  margin-top: 15px;                   
 }
 
-.socials img{
-  max-width: 35px;
-  height: auto;
-  margin-right: 10px;
-  transition: 0.25s;
+.socials img {
+  max-width: 35px;                   /* Limit icon size */
+  height: auto;                       /* Maintain aspect ratio */
+  margin-right: 10px;                 /* Space between icons */
+  transition: 0.25s;                   /* Smooth transition for hover effect */
 }
 
-.socials img:hover{
-  transform: translateY(-3px);
+.socials img:hover {
+  transform: translateY(-3px);       /* Raise icons on hover */
 }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
+/* Footer Styles */
+footer {
+  display: flex;                      /* Flexbox for footer*/
+  flex-direction: column;             /* Stack footer items vertically */
+  justify-content: center;            
+  align-items: center;               
+  background-color: white;           /* White background for footer */
 }
 
-.links p:nth-child(1){
-  font-size: 25px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 0px;
+.links p:nth-child(1) {              /* Selects the first paragraph in links section */
+  font-size: 25px;                   
+  font-weight: 600;                  /* Semi-bold font weight */
+  margin-top: 20px;                  
+  margin-bottom: 0px;                
 }
 
-footer p:nth-child(2){
-  color: #6d6d6d;
-  font-weight: 600;
+footer p:nth-child(2) {
+  color: #6d6d6d;                    /* Gray font color */
+  font-weight: 600;                  /* Semi-bold font weight */
 }
 
-.links a{
-  color: black;
-  text-decoration: none;
+.links a {
+  color: black;                       /* Black font color */
+  text-decoration: none;              /* Remove underline from links */
 }
 
-.links ul{
-  list-style-type: none;
+.links ul {
+  list-style-type: none;              /* Remove default styling from list */
 }
 
-.links li{
-  margin-top: 10px;
+.links li {
+  margin-top: 10px;                  /* Space between list items */
 }
 
-.links a:hover{
-  color: #00DBBA;
+.links a:hover {
+  color: #00DBBA;                     /* Change link color on hover */
 }
 
-
-
-.info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 20px 15px 20px;
-  border-radius: 25px;
-  border: 5px solid rgba(255, 255, 255, 0.211);
+/* Info Box Styles */
+.info {
+  display: flex;                      
+  flex-direction: column;             
+  align-items: center;                
+  padding: 15px 20px;                /* Padding inside info box */
+  border-radius: 25px;               /* Rounded corners */
+  border: 5px solid rgba(255, 255, 255, 0.211); /* Light border */
 }
 
-.info-container{
-  display: flex;
-  flex-direction: row;
+.info-container {
+  display: flex;                      /* Flexbox for container layout */
+  flex-direction: row;               /* Align children in a row */
 }
 
-.info h1{
-  color: white;
-  font-size: 40px;
-  font-weight: 600;  
+.info h1 {
+  color: white;                       /* White color for info heading */
+  font-size: 40px;                   /* Font size for info heading */
+  font-weight: 600;                   /* Semi-bold font weight */
 }
 
-.info p{
-  margin: 5px;
-  font-size: 20px;                
-  color:white;
-  font-weight: 400;
+.info p {
+  margin: 5px;                       
+  font-size: 20px;                   /* Font size for info text */
+  color: white;                       /* White text color */
+  font-weight: 400;                   /* Normal font weight */
 }
 
-
-
-.main-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
+/* Main Container Styles */
+.main-container {
+  display: flex;                      /* Flexbox for main container layout */
+  justify-content: center;            /* Center content */
+  align-items: center;                /* Center items */
+  flex-direction: column;             /* Stack children vertically */
+  margin: 0;                         /* Remove default margin */
 }
 
-.blog-shortcuts{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Blog Shortcuts Styles */
+.blog-shortcuts {
+  display: flex;                      /* Flexbox for blog shortcuts layout */
+  justify-content: center;            /* Center content */
+  align-items: center;                /* Center items */
 }
 
-.blog-s-button{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 25px;
-  background-color: white;
-  border-radius: 5px;
-  width: 300px;
-  transition: 0.25s;
+.blog-s-button {
+  display: flex;                      /* Flexbox for button layout */
+  flex-direction: column;             /* Stack button contents vertically */
+  justify-content: center;            /* Center contents */
+  align-items: center;                /* Center items */
+  margin-right: 25px;                /* Space to the right */
+  background-color: white;           /* White background for buttons */
+  border-radius: 5px;                /* Rounded corners */
+  width: 300px;                       /* Fixed width for buttons */
+  transition: 0.25s;                  /* Smooth transition for hover effects */
 }
 
-.blog-s-button img{
-  max-width: 300px;
+.blog-s-button img {
+  max-width: 300px;                  /* Limit image size in blog shortcuts */
 }
 
-.blog-s-button:hover{
-  cursor: pointer;
-  transform: translateY(-5px);
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
+.blog-s-button:hover {
+  cursor: pointer;                   /* Change cursor to pointer on hover */
+  transform: translateY(-5px);      /* Raise button on hover */
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5); /* Add shadow on hover */
 }
 
-.blog-title{
-  text-align: center;
-  font-weight: 600;
+/* Blog Title Styles */
+.blog-title {
+  text-align: center;                /* Center text for blog titles */
+  font-weight: 600;                  /* Semi-bold font weight */
 }
 
-#blog1::before, #blog2::before {
-  content: "📝"; /* Example of a pencil icon */
-  margin-right: 10px;
-  font-size: 1.2em;
+/* Blog Container Styles */
+.blog-container {
+  display: flex;                      /* Flexbox for blog container layout */
+  justify-content: center;            /* Center content */
+  flex-direction: column;             /* Stack children vertically */
+  align-items: center;                /* Center items */
+  padding: 25px;                     /* Padding inside blog container */
+  border-radius: 10px;               /* Rounded corners */
 }
 
-.blog-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px;
-  border-radius: 10px;
+.blog-datetime {
+  color: #6d6d6d;                    /* Gray color for date/time text */
+  font-style: italic;                
+  font-size: smaller;                /* Smaller font size */
 }
 
-.blog-datetime{
-  color:#6d6d6d;
-  font-style: italic;
-  font-size: smaller;
+/* Blog Post Styles */
+#blog1, #blog2 {
+  padding: 25px;                     /* Padding inside blog posts */
+  border-radius: 10px;               /* Rounded corners */
+  background-color: white;            /* White background for blog posts */
+  margin-bottom: 25px;               /* Space below each blog post */
+  display: flex;                     /* Flexbox for blog post layout */
+  flex-direction: column;             /* Stack blog post contents vertically */
+  align-items: center;                /* Center items */
+  max-width: 800px;                  /* Maximum width for blog posts */
 }
 
-#blog1,#blog2{
-  padding: 25px;
-  border-radius: 10px;
-  background-color: white;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 800px;
+/* Hero Title Styles */
+.hero-title {
+  color: white;                       /* White color for hero titles */
+  display: flex;                      /* Flexbox for hero title layout */
+  flex-direction: column;             /* Stack children vertically */
+  align-items: center;                /* Center items */
+  width: 100%;                        
+  margin-bottom: 25px;               /* Space below hero title */
 }
 
-
-.hero-title{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 25px;
+.hero-title h1 {
+  font-size: 50px;                   /* Font size for hero title */
+  font-weight: 600;                  /* Semi-bold font weight */
+  margin: 0;                         /* Remove default margin */
 }
 
-.hero-title h1{
-  font-size: 50px;
-  font-weight: 600;
-  margin: 0;
-}
-
+/* Form Styles */
 .form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  display: flex;                      /* Flexbox for form layout */
+  justify-content: center;            /* Center form contents */
+  align-items: center;                /* Center items */
+  width: 100%;                        /* Full width */
 }
 
 .form-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  width: 90%;
-  max-width: 600px; /* Prevents the form from becoming too wide */
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);
-  transition: 0.25s;
+  background-color: #fff;            /* White background for form container */
+  padding: 20px;                     /* Padding inside form container */
+  border-radius: 15px;               /* Rounded corners */
+  width: 90%;                        /* Width as a percentage */
+  max-width: 600px;                  /* Prevents form from becoming too wide */
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);    
+  transition: 0.25s;                  /* Smooth transition for hover effects */
 }
 
-.form-container:hover{
-  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);
+.form-container:hover {
+  box-shadow: 0 2px 15px rgba(255, 255, 255, 0.5);      /* Increase shadow opacity on hover */
 }
 
 .form-body {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
-  align-items: center;
+  display: flex;                      /* Flexbox for form body layout */
+  justify-content: space-between;     /* Space between items */
+  flex-direction: column;             /* Stack items vertically */
+  gap: 15px;                          /* Space between items */
+  margin-top: 15px;                  /* Space above form body */
+  align-items: center;                /* Center items */
 }
 
 .form-labels {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  text-align: left;
-  width: 150px;
+  display: flex;                      /* Flexbox for labels layout */
+  flex-direction: column;             /* Stack labels vertically */
+  gap: 15px;                          /* Space between labels */
+  text-align: left;                  /* Align text to the left */
+  width: 150px;                       /* Fixed width for labels */
 }
 
 .form-inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
+  display: flex;                      /* Flexbox for inputs layout */
+  flex-direction: column;             /* Stack inputs vertically */
+  gap: 15px;                          /* Space between inputs */
+  width: 100%;                        /* Full width for inputs */
 }
 
-input:invalid {
-  border-color: red;
+/* Input Validation Styles */
+input:invalid {     
+  border-color: red;                  /* Highlight invalid inputs in red */
 }
 
+/* Input Styles */
 input:not([type="submit"]):not([type="reset"]) {
-  padding: 5px 10px 5px 10px;
-  border-radius: 5px;
-  border-style: solid;
+  padding: 5px 10px;                 /* Padding inside inputs */
+  border-radius: 5px;                /* Rounded corners */
+  border-style: solid;                /* Solid border for inputs */
 }
 
 input[type="text"] {
-  border: 2px solid blue;
+  border: 2px solid blue;             /* Blue border for text inputs */
 }
 
-input[type="submit"], input[type="reset"]{
-  font-size: 15px;
-  background-color: white;
-  border: 2px solid black ;
-  border-radius: 25px;
-  padding: 10px 20px 10px 20px;
-  transition: 0.25s;
+/* Submit/Reset Button Styles */
+input[type="submit"], input[type="reset"] {
+  font-size: 15px;                   /* Font size for buttons */
+  background-color: white;           
+  border: 2px solid black;           /* Black solid border for buttons */
+  border-radius: 25px;               /* Rounded corners */
+  padding: 10px 20px;                /* Padding inside buttons */
+  transition: 0.25s;                  /* Smooth transition for hover effects */
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover{
-  cursor: pointer;
-  background-color: black;
-  color: white;
+input[type="submit"]:hover, input[type="reset"]:hover {
+  cursor: pointer;                   /* Change cursor to pointer on hover */
+  background-color: black;           /* Change background colour on hover */
+  color: white;                       /* Change text color on hover */
 }
 
-
-
+/* Fade-in Animation */
 @keyframes fadeIn {
   to {
-      opacity: 1; /* End fully opaque */
+    opacity: 1;                       /* End fully opaque */
   }
 }
-
 
 /* Responsive Design */
 
-@media (max-width: 1000px){
-  .blog-s-container{
-    flex-direction: column;
+/* Medium devices (Tablets) */
+@media (max-width: 1000px) {
+  .blog-s-container {
+    flex-direction: column;          /* Stack blog shortcuts vertically */
   }
 
-  .blog-card{
-    margin-bottom: 20px;
+  .blog-card {
+    margin-bottom: 20px;             /* Space below blog cards */
   }
 }
 
+/* Small devices (Mobile phones) */
 @media (max-width: 768px) {
-  header{
-    flex-direction: column;     /* Stack the logo and navbar vertically */
-    align-items: center;    /* Align items to the start */
+  header {
+    flex-direction: column;           /* Stack logo and navbar vertically */
+    align-items: center;              /* Center items */
   }
 
-  .navbar{
-    width: 100%;                /* Make the navbar take full width */
-    justify-content: center;    /* Center the navigation */
+  .navbar {
+    width: 100%;                      /* Navbar takes full width */
+    justify-content: center;          /* Center navigation */
   }
 
-  .navbar nav{
-    display: flex;
-    flex-direction: column;     /* Stack the nav links vertically */
-    align-items: center;
-    width: 100%;                /* Ensure full-width for centering */
+  .navbar nav {
+    display: flex;                    /* Flexbox for navbar links */
+    flex-direction: column;           /* Stack nav links vertically */
+    align-items: center;              /* Center items */
+    width: 100%;                      /* Ensure full width for centering */
   }
 
-  .navbar nav a{
-    margin: 10px 0;             /* Add vertical spacing between links */
+  .navbar nav a {
+    margin: 10px 0;                  /* Add vertical spacing between links */
   }
 
-  .logo p{              /* Slightly bigger font size on smaller screen */
+  .logo p {                          /* Slightly bigger font size on smaller screens */
     margin: 0;
     font-size: 28px;
   }
 
   .main {
-    flex-direction: column;        /* Stack image and text vertically */
-    text-align: center;            /* Center text */
+    flex-direction: column;           /* Stack image and text vertically */
+    text-align: center;               /* Center text */
   }
 
-  .portrait img{
-    margin-right: 0;               /* Remove right margin on small screens */
-    margin-bottom: 20px;           /* Add space below the image */
-    max-width: 200px;              /* Reduce image size for smaller screens */
+  .portrait img {
+    margin-right: 0;                  /* Remove right margin on small screens */
+    margin-bottom: 20px;              /* Add space below the image */
+    max-width: 200px;                 /* Reduce image size for smaller screens */
   }
 
-  .blog-shortcuts{
-    flex-direction: column;
+  .blog-shortcuts {
+    flex-direction: column;           /* Stack blog shortcuts vertically */
   }
 
-  .blog-s-button{
-    margin-bottom: 25px;
+  .blog-s-button {
+    margin-bottom: 25px;              /* Space below blog shortcut buttons */
   }
 
-  #blog1,#blog2,#blog1 img,#blog2 img{
-    max-width: 550px;
+  #blog1, #blog2, #blog1 img, #blog2 img {
+    max-width: 550px;                 /* Limit image size in blog posts */
   }
-
 }
 
+/* Extra small devices (Very small mobile phones) */
 @media (max-width: 480px) {
-  .logo p{
+  .logo p {
     margin: 0;
-    font-size: 30px;            /* Slightly bigger font size on very small screens */
+    font-size: 30px;                  /* Slightly bigger font size on very small screens */
   }
 
-  .navbar nav a{
-    font-size: 18px;            /* Adjust link size for smaller screens */
+  .navbar nav a {
+    font-size: 18px;                  /* Adjust link size for smaller screens */
   }
 
-  #blog1,#blog2,#blog1 img,#blog2 img{
-    max-width: 350px;
+  #blog1, #blog2, #blog1 img, #blog2 img {
+    max-width: 350px;                 /* Limit image size further for very small screens */
   }
-
 }
