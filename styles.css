@@ -10,8 +10,7 @@ body {
   position: relative;                     /* Allows absolute positioning of child elements */
   height: 100vh;                         /* Full viewport height */
   overflow: scroll;                      /* Enable scrolling */
-  margin: 0;                             /* Remove default margin */
-  font-optical-sizing: auto;             
+  margin: 0;                             /* Remove default margin */          
   font-style: normal;                     
 }
 
@@ -168,7 +167,7 @@ footer {
   font-size: 25px;                   
   font-weight: 600;                  /* Semi-bold font weight */
   margin-top: 20px;                  
-  margin-bottom: 0px;                
+  margin-bottom: 0;                
 }
 
 footer p:nth-child(2) {
