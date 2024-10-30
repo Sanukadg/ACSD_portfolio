@@ -384,6 +384,15 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   color: white;                       /* Change text color on hover */
 }
 
+input[type="radio"]{
+  cursor:pointer;
+}
+
+input[type="radio"]:checked {
+  transform: scale(1.2);    /* Enlarges the radio button */
+  transition: all 0.3s ease; /* For smooth transition*/
+}
+
 /* Fade-in Animation */
 @keyframes fadeIn {
   to {
