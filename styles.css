@@ -86,6 +86,9 @@ nav a {
 .quick-info {
   display: flex;                       
   flex-direction: column;              /* Stack children vertically */
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
 }
 
 .quick-info p {
@@ -232,6 +235,9 @@ footer p:nth-child(2) {
   display: flex;                      /* Flexbox for blog shortcuts layout */
   justify-content: center;            /* Center content */
   align-items: center;                /* Center items */
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
 }
 
 .blog-s-button {
@@ -312,6 +318,9 @@ footer p:nth-child(2) {
   justify-content: center;            /* Center form contents */
   align-items: center;                /* Center items */
   width: 100%;                        /* Full width */
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s forwards;
 }
 
 .form-container {
@@ -393,10 +402,18 @@ input[type="radio"]:checked {
   transition: all 0.3s ease; /* For smooth transition*/
 }
 
-/* Fade-in Animation */
+/* Fadein animation */
 @keyframes fadeIn {
   to {
     opacity: 1;                       /* End fully opaque */
+  }
+}
+
+/*Slide in animation*/
+@keyframes slideUp {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
