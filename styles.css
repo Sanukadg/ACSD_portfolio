@@ -392,6 +392,11 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   color: white;                       /* Change text color on hover */
 }
 
+input[type="reset"]:active{
+  background-color: rgb(226, 0, 0);   /* Change background colour to red when clicked */
+  border: 2px solid rgb(226, 0, 0);
+}
+
 input[type="radio"]{
   cursor:pointer;
 }
