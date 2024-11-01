@@ -67,16 +67,16 @@ nav a {
 /* Main Content Styles */
 .main {
   opacity: 0;                          /* Initially hidden for animation */
-  animation: fadeIn 1s forwards;      /* Fade-in animation for the main section */
+  animation: fadeIn 1s forwards;      /* Apply Fade in animation */
   min-height: 100vh;                  /* Minimum height of the main section */
   display: flex;                       
-  align-items: center;                 /* Center items vertically */
-  justify-content: center;             /* Center items horizontally */
+  align-items: center;                 
+  justify-content: center;             
 }
 
 /* Image Styles */
 .portrait > img {                       /* Selects the child images relationally inside portrait class */
-  max-width: 350px;                    /* Ensure image scales properly */
+  max-width: 350px;                    
   height: auto;                        /* Maintain aspect ratio */
   margin-right: 20px;                  /* Space between the image and text */
 }
@@ -314,16 +314,16 @@ footer p:nth-child(2) {
 /* Form Styles */
 .form {
   display: flex;                      /* Flexbox for form layout */
-  justify-content: center;            /* Center form contents */
-  align-items: center;                /* Center items */
-  width: 100%;                        /* Full width */
+  justify-content: center;            
+  align-items: center;                
+  width: 100%;                        
   transform: translateY(20px);
   opacity: 0;
   animation: slideUp 1s forwards;
 }
 
 .form-container {
-  background-color: #fff;            /* White background for form container */
+  background-color: #fff;            /* background for form container */
   padding: 20px;                     /* Padding inside form container */
   border-radius: 15px;               /* Rounded corners */
   width: 90%;                        /* Width as a percentage */
@@ -338,9 +338,9 @@ footer p:nth-child(2) {
 
 .form-body {
   display: flex;                      /* Flexbox for form body layout */
-  justify-content: space-between;     /* Space between items */
+  justify-content: space-between;     
   flex-direction: column;             /* Stack items vertically */
-  gap: 15px;                          /* Space between items */
+  gap: 15px;                         
   margin-top: 15px;                  /* Space above form body */
   align-items: center;                /* Center items */
 }
@@ -348,21 +348,21 @@ footer p:nth-child(2) {
 .form-labels {
   display: flex;                      /* Flexbox for labels layout */
   flex-direction: column;             /* Stack labels vertically */
-  gap: 15px;                          /* Space between labels */
-  text-align: left;                  /* Align text to the left */
+  gap: 15px;                         
+  text-align: left;                  
   width: 150px;                       /* Fixed width for labels */
 }
 
 .form-inputs {
   display: flex;                      /* Flexbox for inputs layout */
   flex-direction: column;             /* Stack inputs vertically */
-  gap: 15px;                          /* Space between inputs */
+  gap: 15px;                          
   width: 100%;                        /* Full width for inputs */
 }
 
 /* Input Validation Styles */
 input:invalid {     
-  border-color: red;                  /* Highlight invalid inputs in red */
+  border-color: red;                  /* Make input border red when there is no valid input */
 }
 
 /* Input Styles */
@@ -381,8 +381,8 @@ input[type="submit"], input[type="reset"] {
   font-size: 15px;                   /* Font size for buttons */
   background-color: white;           
   border: 2px solid black;           /* Black solid border for buttons */
-  border-radius: 25px;               /* Rounded corners */
-  padding: 10px 20px;                /* Padding inside buttons */
+  border-radius: 25px;              
+  padding: 10px 20px;                /* Padding inside */
   transition: 0.25s;                  /* Smooth transition for hover effects */
 }
 
