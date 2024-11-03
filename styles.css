@@ -277,6 +277,10 @@ footer p:nth-child(2) {
   border-radius: 10px;               /* Rounded corners */
 }
 
+#blog1 > img{
+  max-width: 598px;
+}
+
 .blog-datetime {
   color: #6d6d6d;                    /* Gray color for date/time text */
   font-style: italic;                
