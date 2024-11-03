@@ -299,6 +299,12 @@ footer p:nth-child(2) {
   max-width: 800px;                  /* Maximum width for blog posts */
 }
 
+#blog1::before, #blog2::before{
+  content: "📝";    /* will be generated before blog title*/
+  color: #ffcc00;
+  font-size: 24px;
+}
+
 /* Hero Title Styles */
 .hero-title {
   color: white;                       /* White color for hero titles */
